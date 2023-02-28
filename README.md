@@ -3,14 +3,14 @@
  
  It uses [streamlit](https://streamlit.io) library for creating this sentiment analyzer tool on a platform like web.
  
- <img src="https://github.com/patidarparas13/Sentiment-Analyzer-Tool/blob/master/image.png">
  
  ## Requirement
  1. Scikit-Learn
- 2. Python 3
- 3. Streamlit
- 4. Numpy
- 5. Matplotlib
+ 2. Streamlit
+ 3. Numpy
+ 4. Matplotlib
+
+ and Python 3.9
  
 Just Download the repository, install the necessary libraries and then run
  ```python
