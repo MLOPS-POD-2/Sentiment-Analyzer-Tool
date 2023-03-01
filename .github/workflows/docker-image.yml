@@ -44,8 +44,8 @@ jobs:
           host: ${{ secrets.HOST_DNS }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
-          script:
-            docker rm backend_server
+          script:  |
+            docker stop backend_server || true && docker rm backend_server || true
             docker pull mlopspod2/senti-analyzer
             docker run --detach --name backend_server -p 8501:8501 mlopspod2/senti-analyzer
             
