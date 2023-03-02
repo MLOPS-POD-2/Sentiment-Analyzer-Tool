@@ -6,6 +6,7 @@ on:
 
 jobs:
   build:
+    name: Build Image and Push to Dockerhub
     runs-on: ubuntu-latest
     steps:
       -
@@ -30,7 +31,7 @@ jobs:
           tags: mlopspod2/senti-analyzer:latest
 
   deploy:
-    name: Deploy to EC2 on master branch push
+    name: Deploy Image from Dockerhub to EC2 
     needs: build
     runs-on: ubuntu-latest
 
