@@ -6,7 +6,7 @@ import numpy as np
 import itertools
 import matplotlib.pyplot as plt
 
-st.title("Sentiment Analyzer Based On Text Analysis ")
+st.title("Sentiment Analyzer Based On Naive Bayes")
 st.write('\n\n')
 
 @st.cache_data
